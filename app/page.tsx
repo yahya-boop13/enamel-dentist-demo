@@ -1,4 +1,5 @@
 import Reveal from "./reveal";
+import ChatWidget from "./chat-widget";
 
 const NAV = [
   { label: "Services", href: "#services" },
@@ -63,6 +64,7 @@ export default function Home() {
   return (
     <>
       <Reveal />
+      <ChatWidget />
 
       {/* NAV */}
       <div className="nav-wrap">
