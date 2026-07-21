@@ -59,19 +59,6 @@ const FAQ = [
   { q: "How long does whitening last?", a: "Most results hold three to six months depending on coffee, tea, red wine, and smoking habits. A quick touch-up every few months keeps you bright — pair it with a cleaning for the best effect." },
 ];
 
-function PhotoPlaceholder({ label }: { label: string }) {
-  return (
-    <div className="ph">
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="0" />
-        <circle cx="8.5" cy="8.5" r="1.5" />
-        <path d="m21 15-5-5L5 21" />
-      </svg>
-      <span className="ph-cap">{label}</span>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <>
@@ -120,7 +107,8 @@ export default function Home() {
             </div>
           </div>
           <div className="photo photo-4x5">
-            <PhotoPlaceholder label="Hero photo — client smiling / studio chair" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="photo-img" src="/hero.png" alt="A client smiling at the ENAMEL studio" style={{ objectPosition: "center 35%" }} />
           </div>
         </section>
       </div>
@@ -176,7 +164,8 @@ export default function Home() {
 
       {/* STUDIO BAND */}
       <div className="studio-band" data-reveal>
-        <PhotoPlaceholder label="Wide studio interior photo" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="photo-img" src="/studio.png" alt="Inside the ENAMEL smile studio in Portland" />
       </div>
 
       <div className="wrap">
@@ -224,7 +213,8 @@ export default function Home() {
         {/* FOUNDER */}
         <section className="section founder" data-reveal>
           <div className="photo photo-1x1">
-            <PhotoPlaceholder label="Founder / dentist portrait" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="photo-img" src="/founder.png" alt="Dr. Mara Vance, founder and supervising dentist" style={{ objectPosition: "center 20%" }} />
           </div>
           <div>
             <span className="eyebrow" style={{ marginBottom: 16 }}>Who runs it</span>
