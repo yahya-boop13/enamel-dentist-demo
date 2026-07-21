@@ -21,8 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={archivo.variable}>
-      <body>{children}</body>
+    <html lang="en" className={archivo.variable} suppressHydrationWarning>
+      <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

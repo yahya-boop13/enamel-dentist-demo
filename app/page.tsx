@@ -108,9 +108,13 @@ export default function Home() {
               <span className="chip"><span className="sq" />HSA / FSA accepted</span>
             </div>
           </div>
-          <div className="photo photo-4x5">
+          <div className="photo photo-4x5 hero-photo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="photo-img" src="/hero.png" alt="A client smiling at the ENAMEL studio" style={{ objectPosition: "center 35%" }} />
+            <div className="photo-caption">
+              <span>★ 4.9 rating</span>
+              <span>320+ happy smiles</span>
+            </div>
           </div>
         </section>
       </div>
