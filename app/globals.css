@@ -226,3 +226,15 @@ img { display: block; max-width: 100%; }
   .how-row { grid-template-columns: 1fr; gap: 6px 0; }
   .how-num { font-size: 14px; }
 }
+
+/* Chat: full-screen on phones, and hide the launcher while open */
+@media (max-width: 600px) {
+  .chat-panel {
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    border: 0 !important;
+  }
+  .chat-launcher.open { display: none !important; }
+}

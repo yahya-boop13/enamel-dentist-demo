@@ -61,6 +61,7 @@ export default function ChatWidget() {
         <div
           role="dialog"
           aria-label="ENAMEL concierge chat"
+          className="chat-panel"
           style={{
             position: "fixed",
             right: "clamp(16px, 3vw, 28px)",
@@ -186,7 +187,7 @@ export default function ChatWidget() {
               onKeyDown={onKey}
               placeholder="Ask about pricing, hours, whitening…"
               aria-label="Message"
-              style={{ flex: 1, minWidth: 0 }}
+              style={{ flex: 1, minWidth: 0, fontSize: 16 }}
             />
             <button
               type="button"
@@ -207,6 +208,7 @@ export default function ChatWidget() {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close chat" : "Open chat"}
+        className={`chat-launcher${open ? " open" : ""}`}
         style={{
           position: "fixed",
           right: "clamp(16px, 3vw, 28px)",
