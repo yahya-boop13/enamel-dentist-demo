@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
+  weight: ["400", "600", "800"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Brightsmile Dental Studio — Gentle, Modern Dentistry in Austin",
+  title: "ENAMEL — a smile studio in Portland",
   description:
-    "Boutique dentistry in Austin, TX. Checkups, cosmetic whitening, Invisalign, and same-day emergencies in a calm, modern space. Accepting new patients.",
+    "Gentle 30-minute cleanings and pro whitening, hygienist-led, in Portland. No drills, no scraping, no judgment. Walk-ins, evenings & weekends. Cleanings from $149.",
 };
 
 export default function RootLayout({
@@ -26,11 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${fraunces.variable} ${manrope.variable} h-full`}
-    >
-      <body className="grain min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={archivo.variable}>
+      <body>{children}</body>
     </html>
   );
 }
