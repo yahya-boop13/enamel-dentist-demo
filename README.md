@@ -7,7 +7,7 @@ Built as a portfolio demo that proves two things at once: a polished, high-desig
 **Live demo:** https://brightsmile-demo-ashen.vercel.app/
 
 ![Website preview](preview.png)
-![Website preview](final work.png)
+![Website preview](final_work.png)
 
 ## What it does
 - A one-page site for a smile studio: hero, services, pricing, how-it-works, founder, testimonials, FAQ, and contact
